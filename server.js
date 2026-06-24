@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 const stripe = Stripe(
-  process.env.STRIPE_SECRET_KEY || "PUT_YOUR_SECRET_KEY_HERE"
+  process.env.STRIPE_SECRET_KEY || "sk_test_51Tkz1SJvlNvMA2aVo06wzNX27x4WYJJP9WgtYvLXOPq0eQUJsh7lIvxPAgAL1SNga1gdNTvRge52pNJjIOyLUQXl00A0hn8nmi"
 );
 
 app.get("/", (req, res) => {
